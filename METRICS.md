@@ -17,7 +17,7 @@
 
 | File | Status | Upstream lines | Unchanged | Removed | Added | Diff |
 | --- | --- | ---: | ---: | ---: | ---: | --- |
-| `.claude-plugin/plugin.json` | added | 0 | 0 | 0 | 25 | [diff](diffs/pstack/.claude-plugin/plugin.json.diff) |
+| `.claude-plugin/plugin.json` | added | 0 | 0 | 0 | 24 | [diff](diffs/pstack/.claude-plugin/plugin.json.diff) |
 | `agents/readonly.md` | added | 0 | 0 | 0 | 7 | [diff](diffs/pstack/agents/readonly.md.diff) |
 | `skills/poteto-mode/references/claude-code.md` | added | 0 | 0 | 0 | 54 | [diff](diffs/pstack/skills/poteto-mode/references/claude-code.md.diff) |
 | `skills/poteto-mode/scripts/watch-pr/watch-pr.cmd` | added | 0 | 0 | 0 | 0 |  |
@@ -118,7 +118,7 @@
 
 | File | Status | Upstream lines | Unchanged | Removed | Added | Diff |
 | --- | --- | ---: | ---: | ---: | ---: | --- |
-| `.claude-plugin/plugin.json` | added | 0 | 0 | 0 | 21 | [diff](diffs/cursor-team-kit/.claude-plugin/plugin.json.diff) |
+| `.claude-plugin/plugin.json` | added | 0 | 0 | 0 | 20 | [diff](diffs/cursor-team-kit/.claude-plugin/plugin.json.diff) |
 | `rules/no-inline-imports.md` | added | 0 | 0 | 0 | 3 | [diff](diffs/cursor-team-kit/rules/no-inline-imports.md.diff) |
 | `rules/typescript-exhaustive-switch.md` | added | 0 | 0 | 0 | 1 | [diff](diffs/cursor-team-kit/rules/typescript-exhaustive-switch.md.diff) |
 | `agents/ci-watcher.md` | changed | 28 | 26 | 2 | 2 | [diff](diffs/cursor-team-kit/agents/ci-watcher.md.diff) |

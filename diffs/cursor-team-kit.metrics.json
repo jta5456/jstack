@@ -3,10 +3,10 @@
         "file":  ".claude-plugin/plugin.json",
         "status":  "added",
         "upstreamLines":  0,
-        "portLines":  21,
+        "portLines":  20,
         "unchanged":  0,
         "removed":  0,
-        "added":  21
+        "added":  20
     },
     {
         "file":  ".cursor-plugin/plugin.json",
