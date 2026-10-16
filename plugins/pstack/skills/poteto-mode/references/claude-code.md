@@ -7,7 +7,7 @@ pstack's skills use these harness terms.
 A slug is `<model>-<effort>`. On the `Agent` call, `claude-opus-5-5-xhigh` is `model: "claude-opus-5-5"` with `effort: "xhigh"`.
 
 - Models: `claude-opus-5-5`, `claude-fable-5-1`, `claude-sonnet-5-5`, `claude-haiku-5-5`.
-- Efforts, highest first: `max`, `xhigh`, `high`, `medium`, `low`.
+- Efforts, highest first: `max`, `xhigh`, `high`, `medium`, `low`. Every model above takes every effort.
 - `auto` and `inherit-parent` leave `model` and `effort` unset.
 
 These are the slugs `/setup-pstack` detects and writes.

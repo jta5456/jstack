@@ -12,8 +12,8 @@
 | Lines unchanged | 13398 (98.22%) |
 | Lines removed / added | 243 / 251 |
 | Words in carried text files | 96665 |
-| Words removed / added (word-level diff) | 942 / 755 |
-| Words untouched | 99.03% |
+| Words removed / added (word-level diff) | 947 / 762 |
+| Words untouched | 99.02% |
 
 | File | Status | Upstream lines | Unchanged | Removed | Added | Diff |
 | --- | --- | ---: | ---: | ---: | ---: | --- |
@@ -140,10 +140,10 @@
 | cloud | 10 | 11 |
 | harness | 1 | 1 |
 | install | 4 | 4 |
-| model | 17 | 72 |
+| model | 18 | 73 |
 | path | 10 | 37 |
 | readonly | 5 | 6 |
 | removed | 8 | 8 |
-| spawn | 9 | 29 |
+| spawn | 10 | 28 |
 | transcript | 12 | 21 |
-| **total** | **90** | **221** |
+| **total** | **92** | **221** |

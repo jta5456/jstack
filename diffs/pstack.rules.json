@@ -186,9 +186,21 @@
         "min":  0
     },
     {
+        "id":  "setup-detect",
+        "cat":  "model",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "task-article",
+        "cat":  "spawn",
+        "hits":  3,
+        "min":  3
+    },
+    {
         "id":  "task-ticked",
         "cat":  "spawn",
-        "hits":  10,
+        "hits":  6,
         "min":  5
     },
     {

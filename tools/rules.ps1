@@ -73,6 +73,10 @@ $Rules = @(
   New-Rule 'task-tool' 'spawn' '' 'the Task tool' 'the `Agent` tool' 8
   New-Rule 'task-spawn' 'spawn' '' 'every Task spawn' 'every `Agent` spawn'
   New-Rule 'task-subagent' 'spawn' '' 'Task subagent' '`Agent` subagent' 0
+  New-Rule 'setup-detect' 'model' '^skills/setup-pstack/' `
+    'Enumerate the model slugs you can pass to a `Task` subagent in this session.' `
+    'Enumerate the model slugs you can pass to an `Agent` subagent in this session, per `../poteto-mode/references/claude-code.md`.'
+  New-Rule 'task-article' 'spawn' '' 'a `Task` prompt' 'an `Agent` prompt' 3
   New-Rule 'task-ticked' 'spawn' '' '`Task`' '`Agent`' 5
 
   # --- cloud agents -> isolation: "remote" (Claude cloud sandbox) ---

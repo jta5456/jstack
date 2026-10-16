@@ -39,7 +39,7 @@ Every number below comes from `tools/build.ps1`, which rebuilds the plugin from 
 | Byte-identical to upstream | 94 (63.5%) | 19 (73.1%) |
 | Changed only by translation | 54 | 7 |
 | Upstream lines unchanged | **98.22%** (13,398 of 13,641) | **98.43%** |
-| Upstream words untouched (word-level diff) | **99.03%** (942 removed, 755 added, of 96,665) | **99.67%** |
+| Upstream words untouched (word-level diff) | **99.02%** (947 removed, 762 added, of 96,665) | **99.67%** |
 | Removed (Cursor-only) | 18 | 2 |
 | Added (Claude-only) | 6 | 3 |
 
@@ -57,14 +57,14 @@ Every number below comes from `tools/build.ps1`, which rebuilds the plugin from 
 
 ### What changed, and why
 
-Changes are token-level translations from a Cursor primitive to the Claude Code primitive that does the same job. Each is a literal rule in [`tools/rules.ps1`](tools/rules.ps1), and the build fails if a rule stops matching upstream. 90 rules make 221 replacements:
+Changes are token-level translations from a Cursor primitive to the Claude Code primitive that does the same job. Each is a literal rule in [`tools/rules.ps1`](tools/rules.ps1), and the build fails if a rule stops matching upstream. 92 rules make 221 replacements:
 
 | Category | Rules | Replacements | Cursor → Claude Code |
 | --- | ---: | ---: | --- |
-| model | 17 | 72 | `grok-4.7-xhigh-fast` → `claude-sonnet-5-5-xhigh`. A slug `<model>-<effort>` splits into the `Agent` call's `model` and `effort`. Families: `claude-opus-*`, `claude-sonnet-*`, `claude-fable-*`, `claude-haiku-*`. Per-spawn fast/standard speed is removed, because fast mode is session-wide (`/fast`). |
+| model | 18 | 73 | `grok-4.7-xhigh-fast` → `claude-sonnet-5-5-xhigh`. A slug `<model>-<effort>` splits into the `Agent` call's `model` and `effort`. Families: `claude-opus-*`, `claude-sonnet-*`, `claude-fable-*`, `claude-haiku-*`. Per-spawn fast/standard speed is removed, because fast mode is session-wide (`/fast`). |
 | path | 10 | 37 | `~/.cursor/rules/pstack-models.mdc` → `~/.claude/rules/pstack-models.md`, a native always-applied rule. `.cursor/skills/` → `.claude/skills/`. `.cursor/worktrees/` → `.claude/worktrees/`. |
 | builtin | 14 | 32 | `AskQuestion` → `AskUserQuestion`. `create-skill` → `skill-creator` (official plugin). Cursor's `/loop` → Claude's `/loop`. `/visualize` → the visualize or Artifact tool. MCP discovery → `mcp__*` tools and ToolSearch. Plan Mode → Claude's plan mode. |
-| spawn | 9 | 29 | `Task` → `Agent`. `generalPurpose` → `general-purpose`. `poteto-agent` → `pstack:poteto-agent`. `comment-sicko` → `pstack:comment-sicko`. |
+| spawn | 10 | 28 | `Task` → `Agent`. `generalPurpose` → `general-purpose`. `poteto-agent` → `pstack:poteto-agent`. `comment-sicko` → `pstack:comment-sicko`. |
 | transcript | 12 | 21 | `agent-transcripts/` → `~/.claude/projects/<encoded-cwd>/`. Includes the slug rule, subagent layout, and `worktree-audit.sh`'s lookup. |
 | cloud | 10 | 11 | `environment: "cloud"` → `isolation: "remote"`. `environment: "local"` → `isolation: "worktree"`. Cursor dashboard → `ListAgents`. The agent store moves to `~/.claude/orchestrate/`. |
 | removed | 8 | 8 | Links to the guide pages and to `make-bot-ui`, which are not shipped. |
@@ -97,6 +97,12 @@ Two more frontmatter edits: `name: Poteto Mode` → `poteto-mode` and `is_backgr
 ### Model mapping
 
 Upstream pairs Opus with Grok for vendor diversity. Claude Code runs only Claude models, so every Grok seat becomes `claude-sonnet-5-5-xhigh`, Claude's fast code model. Panels (arena, architect, interrogate) stay two models from different Claude families. `/setup-pstack` lets you swap any role to `claude-fable-5-1-*` or another model.
+
+### Effort
+
+Every default slug ends in `-xhigh`, as upstream's do. Lauren's `large` budget is the skill default, and poteto-mode starts each role at xhigh, then raises or lowers it per spawn ("Match the model to the job"). The suffix is the same Anthropic `effort` parameter Cursor sets, so `claude-opus-5-5-xhigh` runs exactly as it does in Cursor.
+
+For scale, Claude Code's own recommended efforts are `medium` for Opus 5.5, Sonnet 5.5, and Haiku 5.5, and `high` for Fable 5.1, so pstack's defaults run hotter on purpose. All four models accept every level from `low` to `max`. To spend less, run `/setup-pstack` and pick `medium — high reasoning` or `small — medium reasoning`. That rewrites every role in `~/.claude/rules/pstack-models.md`.
 
 ## Windows
 
