@@ -1,0 +1,542 @@
+﻿[
+    {
+        "id":  "harness-pointer",
+        "cat":  "harness",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "grok-default",
+        "cat":  "model",
+        "hits":  30,
+        "min":  10
+    },
+    {
+        "id":  "grok-medium",
+        "cat":  "model",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "families-arena",
+        "cat":  "model",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "families-interrogate",
+        "cat":  "model",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "budget-fast-token",
+        "cat":  "model",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "budget-grok-cap",
+        "cat":  "model",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "setup-models-api",
+        "cat":  "model",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "slug-split-line",
+        "cat":  "model",
+        "hits":  3,
+        "min":  3
+    },
+    {
+        "id":  "slug-split-interrogate",
+        "cat":  "model",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "slug-split-defaults",
+        "cat":  "model",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "omit-model",
+        "cat":  "model",
+        "hits":  2,
+        "min":  2
+    },
+    {
+        "id":  "speed-pick",
+        "cat":  "model",
+        "hits":  24,
+        "min":  15
+    },
+    {
+        "id":  "speed-match",
+        "cat":  "model",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "speed-fast-mode",
+        "cat":  "model",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "speed-verify",
+        "cat":  "model",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "speed-family",
+        "cat":  "model",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "speed-nearest",
+        "cat":  "model",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "ro-how",
+        "cat":  "readonly",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "ro-interrogate",
+        "cat":  "readonly",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "ro-arena-judge",
+        "cat":  "readonly",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "ro-agent-mode",
+        "cat":  "readonly",
+        "hits":  2,
+        "min":  2
+    },
+    {
+        "id":  "ro-why",
+        "cat":  "readonly",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "gp-typed",
+        "cat":  "spawn",
+        "hits":  3,
+        "min":  3
+    },
+    {
+        "id":  "gp-bare",
+        "cat":  "spawn",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "poteto-agent-type",
+        "cat":  "spawn",
+        "hits":  3,
+        "min":  3
+    },
+    {
+        "id":  "comment-sicko-type",
+        "cat":  "spawn",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "task-nested",
+        "cat":  "spawn",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "task-tool",
+        "cat":  "spawn",
+        "hits":  9,
+        "min":  8
+    },
+    {
+        "id":  "task-spawn",
+        "cat":  "spawn",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "task-subagent",
+        "cat":  "spawn",
+        "hits":  0,
+        "min":  0
+    },
+    {
+        "id":  "task-ticked",
+        "cat":  "spawn",
+        "hits":  10,
+        "min":  5
+    },
+    {
+        "id":  "cloud-env",
+        "cat":  "cloud",
+        "hits":  2,
+        "min":  2
+    },
+    {
+        "id":  "local-env",
+        "cat":  "cloud",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "cloud-base-branch",
+        "cat":  "cloud",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "cloud-owner",
+        "cat":  "cloud",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "cloud-verifier",
+        "cat":  "cloud",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "cloud-dashboard",
+        "cat":  "cloud",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "restart-after",
+        "cat":  "cloud",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "restart-a",
+        "cat":  "cloud",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "store-root",
+        "cat":  "cloud",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "store-current",
+        "cat":  "cloud",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "tx-system-prompt",
+        "cat":  "transcript",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "tx-active-this",
+        "cat":  "transcript",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "tx-active-the",
+        "cat":  "transcript",
+        "hits":  2,
+        "min":  2
+    },
+    {
+        "id":  "tx-reflect",
+        "cat":  "transcript",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "tx-reflect-ls",
+        "cat":  "transcript",
+        "hits":  3,
+        "min":  3
+    },
+    {
+        "id":  "tx-orchestrate",
+        "cat":  "transcript",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "tx-recall",
+        "cat":  "transcript",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "tx-glob",
+        "cat":  "transcript",
+        "hits":  5,
+        "min":  5
+    },
+    {
+        "id":  "tx-shell-tool",
+        "cat":  "transcript",
+        "hits":  3,
+        "min":  3
+    },
+    {
+        "id":  "tx-audit-comment",
+        "cat":  "transcript",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "tx-audit-slug",
+        "cat":  "transcript",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "tx-audit-dir",
+        "cat":  "transcript",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "models-rule-path",
+        "cat":  "path",
+        "hits":  8,
+        "min":  5
+    },
+    {
+        "id":  "models-rule-name",
+        "cat":  "path",
+        "hits":  4,
+        "min":  3
+    },
+    {
+        "id":  "setup-always",
+        "cat":  "path",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "setup-always-shape",
+        "cat":  "path",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "user-skills",
+        "cat":  "path",
+        "hits":  5,
+        "min":  2
+    },
+    {
+        "id":  "project-skills",
+        "cat":  "path",
+        "hits":  11,
+        "min":  4
+    },
+    {
+        "id":  "plugins-dir",
+        "cat":  "path",
+        "hits":  4,
+        "min":  2
+    },
+    {
+        "id":  "plugin-manifest",
+        "cat":  "path",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "worktrees-dir",
+        "cat":  "path",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "app-caches",
+        "cat":  "path",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "ask-question",
+        "cat":  "builtin",
+        "hits":  6,
+        "min":  4
+    },
+    {
+        "id":  "create-skill-built-in-skill",
+        "cat":  "builtin",
+        "hits":  2,
+        "min":  2
+    },
+    {
+        "id":  "create-skill-built-in",
+        "cat":  "builtin",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "create-skill-bold",
+        "cat":  "builtin",
+        "hits":  2,
+        "min":  2
+    },
+    {
+        "id":  "create-skill-help",
+        "cat":  "builtin",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "create-skill-bare",
+        "cat":  "builtin",
+        "hits":  11,
+        "min":  8
+    },
+    {
+        "id":  "babysit-playbook",
+        "cat":  "builtin",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "babysit-trigger",
+        "cat":  "builtin",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "babysit-own",
+        "cat":  "builtin",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "loop-command",
+        "cat":  "builtin",
+        "hits":  2,
+        "min":  2
+    },
+    {
+        "id":  "visualize-diagram",
+        "cat":  "builtin",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "visualize-chart",
+        "cat":  "builtin",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "why-mcps",
+        "cat":  "builtin",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "help-install",
+        "cat":  "install",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "help-portability",
+        "cat":  "install",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "help-modes",
+        "cat":  "install",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "help-plan-mode",
+        "cat":  "builtin",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "help-docs-link",
+        "cat":  "install",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "help-guide-1",
+        "cat":  "removed",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "help-guide-2",
+        "cat":  "removed",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "help-guide-6",
+        "cat":  "removed",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "help-guide-8",
+        "cat":  "removed",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "help-guide-7",
+        "cat":  "removed",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "help-guide-10",
+        "cat":  "removed",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "help-guide-9",
+        "cat":  "removed",
+        "hits":  1,
+        "min":  1
+    },
+    {
+        "id":  "help-bot-ui",
+        "cat":  "removed",
+        "hits":  1,
+        "min":  1
+    }
+]

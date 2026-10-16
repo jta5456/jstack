@@ -1,0 +1,25 @@
+{
+  "name": "pstack",
+  "displayName": "pstack",
+  "version": "0.15.25",
+  "description": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+  "author": {
+    "name": "Lauren Tan"
+  },
+  "homepage": "https://github.com/jta5456/jstack",
+  "repository": "https://github.com/jta5456/jstack",
+  "license": "MIT",
+  "keywords": [
+    "pstack",
+    "poteto-mode",
+    "workflow",
+    "principles",
+    "agent-style",
+    "subagents",
+    "unslop"
+  ],
+  "icon": "./assets/logo.png",
+  "dependencies": [
+    "cursor-team-kit"
+  ]
+}

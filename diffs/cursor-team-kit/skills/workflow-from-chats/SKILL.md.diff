@@ -1,0 +1,9 @@
+--- upstream/skills/workflow-from-chats/SKILL.md
++++ jstack/skills/workflow-from-chats/SKILL.md
+@@ -1,5 +1,5 @@
+ ---
+ name: workflow-from-chats
+-description: Extract durable working preferences from recent Cursor chats and convert them into skills, rules, or workflow docs. Use when asked to learn preferences, mine feedback, personalize workflows, or generate team/person-specific agent guidance.
++description: Extract durable working preferences from recent Claude Code chats and convert them into skills, rules, or workflow docs. Use when asked to learn preferences, mine feedback, personalize workflows, or generate team/person-specific agent guidance.
+ ---
+ 

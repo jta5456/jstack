@@ -1,0 +1,23 @@
+{
+  "name": "jstack",
+  "owner": {
+    "name": "jta5456"
+  },
+  "metadata": {
+    "description": "Lauren Tan's pstack and its cursor-team-kit dependency, ported natively to Claude Code with minimal change."
+  },
+  "plugins": [
+    {
+      "name": "pstack",
+      "source": "./plugins/pstack",
+      "description": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "version": "0.15.25"
+    },
+    {
+      "name": "cursor-team-kit",
+      "source": "./plugins/cursor-team-kit",
+      "description": "Internal team workflows for CI, code review, shipping, local automation, and verification.",
+      "version": "1.2.0"
+    }
+  ]
+}

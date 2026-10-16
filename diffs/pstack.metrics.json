@@ -1,0 +1,1577 @@
+﻿[
+    {
+        "file":  ".claude-plugin/plugin.json",
+        "status":  "added",
+        "upstreamLines":  0,
+        "portLines":  25,
+        "unchanged":  0,
+        "removed":  0,
+        "added":  25
+    },
+    {
+        "file":  ".cursor-plugin/plugin.json",
+        "status":  "replaced",
+        "upstreamLines":  31,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  31,
+        "added":  0
+    },
+    {
+        "file":  ".gitignore",
+        "status":  "identical",
+        "upstreamLines":  3,
+        "portLines":  3,
+        "unchanged":  3,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "agents/comment-sicko.md",
+        "status":  "identical",
+        "upstreamLines":  32,
+        "portLines":  32,
+        "unchanged":  32,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "agents/poteto-agent.md",
+        "status":  "changed",
+        "upstreamLines":  9,
+        "portLines":  9,
+        "unchanged":  6,
+        "removed":  3,
+        "added":  3
+    },
+    {
+        "file":  "agents/readonly.md",
+        "status":  "added",
+        "upstreamLines":  0,
+        "portLines":  7,
+        "unchanged":  0,
+        "removed":  0,
+        "added":  7
+    },
+    {
+        "file":  "assets/logo.png",
+        "status":  "identical",
+        "upstreamLines":  0,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "automations/benny/FOR_AGENTS.md",
+        "status":  "changed",
+        "upstreamLines":  89,
+        "portLines":  94,
+        "unchanged":  72,
+        "removed":  17,
+        "added":  22
+    },
+    {
+        "file":  "automations/benny/README.md",
+        "status":  "changed",
+        "upstreamLines":  23,
+        "portLines":  28,
+        "unchanged":  14,
+        "removed":  9,
+        "added":  14
+    },
+    {
+        "file":  "automations/benny/skills/reproduce-and-fix-issues/references/control-adapter.md",
+        "status":  "changed",
+        "upstreamLines":  169,
+        "portLines":  169,
+        "unchanged":  168,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "automations/benny/skills/reproduce-and-fix-issues/references/feature-map.example.md",
+        "status":  "changed",
+        "upstreamLines":  205,
+        "portLines":  205,
+        "unchanged":  204,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "automations/benny/skills/reproduce-and-fix-issues/references/verify-existing-fix.md",
+        "status":  "identical",
+        "upstreamLines":  93,
+        "portLines":  93,
+        "unchanged":  93,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
+        "status":  "changed",
+        "upstreamLines":  310,
+        "portLines":  310,
+        "unchanged":  303,
+        "removed":  7,
+        "added":  7
+    },
+    {
+        "file":  "automations/benny/skills/setup-benny/SKILL.md",
+        "status":  "changed",
+        "upstreamLines":  266,
+        "portLines":  271,
+        "unchanged":  219,
+        "removed":  47,
+        "added":  52
+    },
+    {
+        "file":  "automations/benny/skills/triage-issue-reports/references/routing.example.md",
+        "status":  "changed",
+        "upstreamLines":  61,
+        "portLines":  61,
+        "unchanged":  60,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "automations/benny/skills/triage-issue-reports/SKILL.md",
+        "status":  "changed",
+        "upstreamLines":  240,
+        "portLines":  240,
+        "unchanged":  236,
+        "removed":  4,
+        "added":  4
+    },
+    {
+        "file":  "automations/benny/templates/configuration.example.yaml",
+        "status":  "changed",
+        "upstreamLines":  84,
+        "portLines":  85,
+        "unchanged":  77,
+        "removed":  7,
+        "added":  8
+    },
+    {
+        "file":  "automations/benny/templates/reproduce-automation-prompt.md",
+        "status":  "changed",
+        "upstreamLines":  33,
+        "portLines":  33,
+        "unchanged":  30,
+        "removed":  3,
+        "added":  3
+    },
+    {
+        "file":  "automations/benny/templates/triage-automation-prompt.md",
+        "status":  "changed",
+        "upstreamLines":  39,
+        "portLines":  39,
+        "unchanged":  37,
+        "removed":  2,
+        "added":  2
+    },
+    {
+        "file":  "docs/guide/01-setup.md",
+        "status":  "removed",
+        "upstreamLines":  62,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  62,
+        "added":  0
+    },
+    {
+        "file":  "docs/guide/02-poteto-mode.md",
+        "status":  "removed",
+        "upstreamLines":  131,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  131,
+        "added":  0
+    },
+    {
+        "file":  "docs/guide/03-understand.md",
+        "status":  "removed",
+        "upstreamLines":  79,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  79,
+        "added":  0
+    },
+    {
+        "file":  "docs/guide/04-design.md",
+        "status":  "removed",
+        "upstreamLines":  133,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  133,
+        "added":  0
+    },
+    {
+        "file":  "docs/guide/05-build-and-clean.md",
+        "status":  "removed",
+        "upstreamLines":  83,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  83,
+        "added":  0
+    },
+    {
+        "file":  "docs/guide/06-verify-and-ship.md",
+        "status":  "removed",
+        "upstreamLines":  130,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  130,
+        "added":  0
+    },
+    {
+        "file":  "docs/guide/07-overnight.md",
+        "status":  "removed",
+        "upstreamLines":  120,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  120,
+        "added":  0
+    },
+    {
+        "file":  "docs/guide/08-principles.md",
+        "status":  "removed",
+        "upstreamLines":  72,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  72,
+        "added":  0
+    },
+    {
+        "file":  "docs/guide/09-make-it-yours.md",
+        "status":  "removed",
+        "upstreamLines":  100,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  100,
+        "added":  0
+    },
+    {
+        "file":  "docs/guide/10-recipes-and-pitfalls.md",
+        "status":  "removed",
+        "upstreamLines":  156,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  156,
+        "added":  0
+    },
+    {
+        "file":  "docs/guide/images/design.jpg",
+        "status":  "removed",
+        "upstreamLines":  0,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "docs/guide/images/overnight.jpg",
+        "status":  "removed",
+        "upstreamLines":  0,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "docs/guide/images/recipes.jpg",
+        "status":  "removed",
+        "upstreamLines":  0,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "docs/guide/images/router.jpg",
+        "status":  "removed",
+        "upstreamLines":  0,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "docs/guide/images/understanding.jpg",
+        "status":  "removed",
+        "upstreamLines":  0,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "docs/guide/images/verification.jpg",
+        "status":  "removed",
+        "upstreamLines":  0,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "docs/guide/README.md",
+        "status":  "removed",
+        "upstreamLines":  38,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  38,
+        "added":  0
+    },
+    {
+        "file":  "LICENSE",
+        "status":  "identical",
+        "upstreamLines":  21,
+        "portLines":  21,
+        "unchanged":  21,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "plugin.json",
+        "status":  "replaced",
+        "upstreamLines":  21,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  21,
+        "added":  0
+    },
+    {
+        "file":  "README.md",
+        "status":  "replaced",
+        "upstreamLines":  274,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  274,
+        "added":  0
+    },
+    {
+        "file":  "skills/architect/references/design-red-flags.md",
+        "status":  "identical",
+        "upstreamLines":  57,
+        "portLines":  57,
+        "unchanged":  57,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/architect/references/rationale-template.md",
+        "status":  "identical",
+        "upstreamLines":  35,
+        "portLines":  35,
+        "unchanged":  35,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/architect/references/runner-prompt.md",
+        "status":  "identical",
+        "upstreamLines":  20,
+        "portLines":  20,
+        "unchanged":  20,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/architect/SKILL.md",
+        "status":  "changed",
+        "upstreamLines":  79,
+        "portLines":  79,
+        "unchanged":  78,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "skills/arena/SKILL.md",
+        "status":  "changed",
+        "upstreamLines":  48,
+        "portLines":  48,
+        "unchanged":  46,
+        "removed":  2,
+        "added":  2
+    },
+    {
+        "file":  "skills/automate-me/SKILL.md",
+        "status":  "changed",
+        "upstreamLines":  104,
+        "portLines":  104,
+        "unchanged":  92,
+        "removed":  12,
+        "added":  12
+    },
+    {
+        "file":  "skills/benchmark-checklist/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  39,
+        "portLines":  39,
+        "unchanged":  39,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/blast-radius/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  50,
+        "portLines":  50,
+        "unchanged":  50,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/bro/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  7,
+        "portLines":  7,
+        "unchanged":  7,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/correct/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  32,
+        "portLines":  32,
+        "unchanged":  32,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/create-verification-skill/references/feature-map-example/create-note.md",
+        "status":  "identical",
+        "upstreamLines":  39,
+        "portLines":  39,
+        "unchanged":  39,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/create-verification-skill/references/feature-map-example/README.md",
+        "status":  "identical",
+        "upstreamLines":  47,
+        "portLines":  47,
+        "unchanged":  47,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/create-verification-skill/references/feature-map-example/search.md",
+        "status":  "identical",
+        "upstreamLines":  45,
+        "portLines":  45,
+        "unchanged":  45,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/create-verification-skill/SKILL.md",
+        "status":  "changed",
+        "upstreamLines":  44,
+        "portLines":  44,
+        "unchanged":  41,
+        "removed":  3,
+        "added":  3
+    },
+    {
+        "file":  "skills/figure-it-out/SKILL.md",
+        "status":  "changed",
+        "upstreamLines":  52,
+        "portLines":  52,
+        "unchanged":  51,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "skills/how/references/explainer-prompt.md",
+        "status":  "identical",
+        "upstreamLines":  55,
+        "portLines":  55,
+        "unchanged":  55,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/how/references/explorer-prompt.md",
+        "status":  "identical",
+        "upstreamLines":  35,
+        "portLines":  35,
+        "unchanged":  35,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/how/SKILL.md",
+        "status":  "changed",
+        "upstreamLines":  36,
+        "portLines":  36,
+        "unchanged":  35,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "skills/interrogate/references/code-quality-review.md",
+        "status":  "identical",
+        "upstreamLines":  47,
+        "portLines":  47,
+        "unchanged":  47,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/interrogate/references/lead-judgment.md",
+        "status":  "identical",
+        "upstreamLines":  39,
+        "portLines":  39,
+        "unchanged":  39,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/interrogate/references/reviewer-prompt.md",
+        "status":  "identical",
+        "upstreamLines":  62,
+        "portLines":  62,
+        "unchanged":  62,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/interrogate/references/rubric.md",
+        "status":  "identical",
+        "upstreamLines":  77,
+        "portLines":  77,
+        "unchanged":  77,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/interrogate/SKILL.md",
+        "status":  "changed",
+        "upstreamLines":  74,
+        "portLines":  74,
+        "unchanged":  69,
+        "removed":  5,
+        "added":  5
+    },
+    {
+        "file":  "skills/in-your-own-words/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  7,
+        "portLines":  7,
+        "unchanged":  7,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/ketchup/SKILL.md",
+        "status":  "changed",
+        "upstreamLines":  37,
+        "portLines":  37,
+        "unchanged":  35,
+        "removed":  2,
+        "added":  2
+    },
+    {
+        "file":  "skills/maintain-verification-skill/SKILL.md",
+        "status":  "changed",
+        "upstreamLines":  39,
+        "portLines":  39,
+        "unchanged":  38,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "skills/make-bot-ui/SKILL.md",
+        "status":  "removed",
+        "upstreamLines":  115,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  115,
+        "added":  0
+    },
+    {
+        "file":  "skills/no-comments/SKILL.md",
+        "status":  "changed",
+        "upstreamLines":  24,
+        "portLines":  24,
+        "unchanged":  23,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "skills/poteto-help/references/prompting.md",
+        "status":  "identical",
+        "upstreamLines":  51,
+        "portLines":  51,
+        "unchanged":  51,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-help/references/recipes.md",
+        "status":  "identical",
+        "upstreamLines":  49,
+        "portLines":  49,
+        "unchanged":  49,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-help/SKILL.md",
+        "status":  "changed",
+        "upstreamLines":  156,
+        "portLines":  149,
+        "unchanged":  138,
+        "removed":  18,
+        "added":  11
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/authoring-a-skill.md",
+        "status":  "changed",
+        "upstreamLines":  12,
+        "portLines":  12,
+        "unchanged":  11,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/autonomous-run.md",
+        "status":  "changed",
+        "upstreamLines":  13,
+        "portLines":  13,
+        "unchanged":  11,
+        "removed":  2,
+        "added":  2
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/autopilot-full.md",
+        "status":  "changed",
+        "upstreamLines":  25,
+        "portLines":  25,
+        "unchanged":  23,
+        "removed":  2,
+        "added":  2
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/autopilot-stack.md",
+        "status":  "identical",
+        "upstreamLines":  12,
+        "portLines":  12,
+        "unchanged":  12,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/babysit.md",
+        "status":  "changed",
+        "upstreamLines":  23,
+        "portLines":  23,
+        "unchanged":  22,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/bug-fix.md",
+        "status":  "changed",
+        "upstreamLines":  15,
+        "portLines":  15,
+        "unchanged":  12,
+        "removed":  3,
+        "added":  3
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/eval.md",
+        "status":  "changed",
+        "upstreamLines":  25,
+        "portLines":  25,
+        "unchanged":  23,
+        "removed":  2,
+        "added":  2
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/feature.md",
+        "status":  "changed",
+        "upstreamLines":  21,
+        "portLines":  21,
+        "unchanged":  20,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/hillclimb.md",
+        "status":  "changed",
+        "upstreamLines":  21,
+        "portLines":  21,
+        "unchanged":  20,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/investigation.md",
+        "status":  "identical",
+        "upstreamLines":  14,
+        "portLines":  14,
+        "unchanged":  14,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/multi-phase-plan.md",
+        "status":  "changed",
+        "upstreamLines":  155,
+        "portLines":  155,
+        "unchanged":  153,
+        "removed":  2,
+        "added":  2
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/opening-a-pr.md",
+        "status":  "changed",
+        "upstreamLines":  34,
+        "portLines":  34,
+        "unchanged":  33,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/orchestrate.md",
+        "status":  "changed",
+        "upstreamLines":  112,
+        "portLines":  112,
+        "unchanged":  106,
+        "removed":  6,
+        "added":  6
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/pause-safely.md",
+        "status":  "identical",
+        "upstreamLines":  10,
+        "portLines":  10,
+        "unchanged":  10,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/perf-issue.md",
+        "status":  "changed",
+        "upstreamLines":  25,
+        "portLines":  25,
+        "unchanged":  24,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/prototype.md",
+        "status":  "identical",
+        "upstreamLines":  14,
+        "portLines":  14,
+        "unchanged":  14,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/refactoring.md",
+        "status":  "changed",
+        "upstreamLines":  16,
+        "portLines":  16,
+        "unchanged":  15,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/runtime-forensics.md",
+        "status":  "changed",
+        "upstreamLines":  11,
+        "portLines":  11,
+        "unchanged":  10,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/session-pickup.md",
+        "status":  "changed",
+        "upstreamLines":  11,
+        "portLines":  11,
+        "unchanged":  10,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/shipping.md",
+        "status":  "changed",
+        "upstreamLines":  12,
+        "portLines":  12,
+        "unchanged":  11,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/trace-forensics.md",
+        "status":  "changed",
+        "upstreamLines":  14,
+        "portLines":  14,
+        "unchanged":  13,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/visual-parity.md",
+        "status":  "identical",
+        "upstreamLines":  11,
+        "portLines":  11,
+        "unchanged":  11,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/playbooks/worktree-cleanup.md",
+        "status":  "changed",
+        "upstreamLines":  12,
+        "portLines":  12,
+        "unchanged":  9,
+        "removed":  3,
+        "added":  3
+    },
+    {
+        "file":  "skills/poteto-mode/references/bugbot-triage.md",
+        "status":  "identical",
+        "upstreamLines":  142,
+        "portLines":  142,
+        "unchanged":  142,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/references/claude-code.md",
+        "status":  "added",
+        "upstreamLines":  0,
+        "portLines":  54,
+        "unchanged":  0,
+        "removed":  0,
+        "added":  54
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/bootstrap.ts",
+        "status":  "identical",
+        "upstreamLines":  62,
+        "portLines":  62,
+        "unchanged":  62,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/bun.lock",
+        "status":  "identical",
+        "upstreamLines":  0,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/check-plan.mjs",
+        "status":  "identical",
+        "upstreamLines":  205,
+        "portLines":  205,
+        "unchanged":  205,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/check-plan.test.ts",
+        "status":  "identical",
+        "upstreamLines":  96,
+        "portLines":  96,
+        "unchanged":  96,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/orch/orch.test.ts",
+        "status":  "changed",
+        "upstreamLines":  761,
+        "portLines":  761,
+        "unchanged":  757,
+        "removed":  4,
+        "added":  4
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/orch/orch.ts",
+        "status":  "identical",
+        "upstreamLines":  590,
+        "portLines":  590,
+        "unchanged":  590,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/orch/store.ts",
+        "status":  "identical",
+        "upstreamLines":  1677,
+        "portLines":  1677,
+        "unchanged":  1677,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/package.json",
+        "status":  "identical",
+        "upstreamLines":  16,
+        "portLines":  16,
+        "unchanged":  16,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/watch-pr/cli.test.ts",
+        "status":  "identical",
+        "upstreamLines":  224,
+        "portLines":  224,
+        "unchanged":  224,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/watch-pr/cli.ts",
+        "status":  "identical",
+        "upstreamLines":  223,
+        "portLines":  223,
+        "unchanged":  223,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/watch-pr/fakes.test-helper.ts",
+        "status":  "identical",
+        "upstreamLines":  129,
+        "portLines":  129,
+        "unchanged":  129,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/watch-pr/github.test.ts",
+        "status":  "identical",
+        "upstreamLines":  436,
+        "portLines":  436,
+        "unchanged":  436,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/watch-pr/github.ts",
+        "status":  "identical",
+        "upstreamLines":  718,
+        "portLines":  718,
+        "unchanged":  718,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/watch-pr/policy.test.ts",
+        "status":  "identical",
+        "upstreamLines":  420,
+        "portLines":  420,
+        "unchanged":  420,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/watch-pr/policy.ts",
+        "status":  "identical",
+        "upstreamLines":  836,
+        "portLines":  836,
+        "unchanged":  836,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/watch-pr/render.ts",
+        "status":  "identical",
+        "upstreamLines":  169,
+        "portLines":  169,
+        "unchanged":  169,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/watch-pr/tsconfig.json",
+        "status":  "identical",
+        "upstreamLines":  13,
+        "portLines":  13,
+        "unchanged":  13,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/watch-pr/types.compile.ts",
+        "status":  "identical",
+        "upstreamLines":  93,
+        "portLines":  93,
+        "unchanged":  93,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/watch-pr/types.ts",
+        "status":  "identical",
+        "upstreamLines":  413,
+        "portLines":  413,
+        "unchanged":  413,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/watch-pr/watch-pr",
+        "status":  "identical",
+        "upstreamLines":  6,
+        "portLines":  6,
+        "unchanged":  6,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/watch-pr/watch-pr.cmd",
+        "status":  "added",
+        "upstreamLines":  0,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/worktree-audit.ps1",
+        "status":  "added",
+        "upstreamLines":  0,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/poteto-mode/scripts/worktree-audit.sh",
+        "status":  "changed",
+        "upstreamLines":  126,
+        "portLines":  126,
+        "unchanged":  123,
+        "removed":  3,
+        "added":  3
+    },
+    {
+        "file":  "skills/poteto-mode/SKILL.md",
+        "status":  "changed",
+        "upstreamLines":  149,
+        "portLines":  149,
+        "unchanged":  140,
+        "removed":  9,
+        "added":  9
+    },
+    {
+        "file":  "skills/principle-attack-the-premise/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  21,
+        "portLines":  21,
+        "unchanged":  21,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-boundary-discipline/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  34,
+        "portLines":  34,
+        "unchanged":  34,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-build-the-lever/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  23,
+        "portLines":  23,
+        "unchanged":  23,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-encode-lessons-in-structure/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  11,
+        "portLines":  11,
+        "unchanged":  11,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-exhaust-the-design-space/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  9,
+        "portLines":  9,
+        "unchanged":  9,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-experience-first/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  19,
+        "portLines":  19,
+        "unchanged":  19,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-explain-the-number/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  17,
+        "portLines":  17,
+        "unchanged":  17,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-fix-root-causes/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  21,
+        "portLines":  21,
+        "unchanged":  21,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-foundational-thinking/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  21,
+        "portLines":  21,
+        "unchanged":  21,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-guard-the-context-window/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  12,
+        "portLines":  12,
+        "unchanged":  12,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-laziness-protocol/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  10,
+        "portLines":  10,
+        "unchanged":  10,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-make-operations-idempotent/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  22,
+        "portLines":  22,
+        "unchanged":  22,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  14,
+        "portLines":  14,
+        "unchanged":  14,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-minimize-reader-load/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  18,
+        "portLines":  18,
+        "unchanged":  18,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-model-the-domain/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  24,
+        "portLines":  24,
+        "unchanged":  24,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-never-block-on-the-human/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  15,
+        "portLines":  15,
+        "unchanged":  15,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-outcome-oriented-execution/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  21,
+        "portLines":  21,
+        "unchanged":  21,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-prove-it-works/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  22,
+        "portLines":  22,
+        "unchanged":  22,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-redesign-from-first-principles/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  16,
+        "portLines":  16,
+        "unchanged":  16,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-separate-before-serializing-shared-state/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  16,
+        "portLines":  16,
+        "unchanged":  16,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-sequence-verifiable-units/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  17,
+        "portLines":  17,
+        "unchanged":  17,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-subtract-before-you-add/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  18,
+        "portLines":  18,
+        "unchanged":  18,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-test-behavior-not-implementation/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  20,
+        "portLines":  20,
+        "unchanged":  20,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/principle-type-system-discipline/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  13,
+        "portLines":  13,
+        "unchanged":  13,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/recall/SKILL.md",
+        "status":  "changed",
+        "upstreamLines":  35,
+        "portLines":  35,
+        "unchanged":  33,
+        "removed":  2,
+        "added":  2
+    },
+    {
+        "file":  "skills/reflect/references/divergent-reviewer.md",
+        "status":  "changed",
+        "upstreamLines":  38,
+        "portLines":  38,
+        "unchanged":  37,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "skills/reflect/references/judgment-reviewer.md",
+        "status":  "changed",
+        "upstreamLines":  37,
+        "portLines":  37,
+        "unchanged":  36,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "skills/reflect/references/synthesizer.md",
+        "status":  "changed",
+        "upstreamLines":  56,
+        "portLines":  56,
+        "unchanged":  54,
+        "removed":  2,
+        "added":  2
+    },
+    {
+        "file":  "skills/reflect/references/tooling-reviewer.md",
+        "status":  "changed",
+        "upstreamLines":  48,
+        "portLines":  48,
+        "unchanged":  47,
+        "removed":  1,
+        "added":  1
+    },
+    {
+        "file":  "skills/reflect/SKILL.md",
+        "status":  "changed",
+        "upstreamLines":  67,
+        "portLines":  67,
+        "unchanged":  57,
+        "removed":  10,
+        "added":  10
+    },
+    {
+        "file":  "skills/setup-pstack/SKILL.md",
+        "status":  "changed",
+        "upstreamLines":  74,
+        "portLines":  73,
+        "unchanged":  53,
+        "removed":  21,
+        "added":  20
+    },
+    {
+        "file":  "skills/sharpen/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  7,
+        "portLines":  7,
+        "unchanged":  7,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/show-me-your-work/references/decision-log-template.tsv",
+        "status":  "identical",
+        "upstreamLines":  1,
+        "portLines":  1,
+        "unchanged":  1,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/show-me-your-work/scripts/log.ps1",
+        "status":  "added",
+        "upstreamLines":  0,
+        "portLines":  0,
+        "unchanged":  0,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/show-me-your-work/scripts/log.sh",
+        "status":  "identical",
+        "upstreamLines":  42,
+        "portLines":  42,
+        "unchanged":  42,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/show-me-your-work/SKILL.md",
+        "status":  "changed",
+        "upstreamLines":  82,
+        "portLines":  82,
+        "unchanged":  80,
+        "removed":  2,
+        "added":  2
+    },
+    {
+        "file":  "skills/swarm/SKILL.md",
+        "status":  "changed",
+        "upstreamLines":  41,
+        "portLines":  41,
+        "unchanged":  38,
+        "removed":  3,
+        "added":  3
+    },
+    {
+        "file":  "skills/tdd/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  42,
+        "portLines":  42,
+        "unchanged":  42,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/teach/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  21,
+        "portLines":  21,
+        "unchanged":  21,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/technical-writing/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  106,
+        "portLines":  106,
+        "unchanged":  106,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/typescript-best-practices/references/patterns.md",
+        "status":  "identical",
+        "upstreamLines":  324,
+        "portLines":  324,
+        "unchanged":  324,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/typescript-best-practices/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  31,
+        "portLines":  31,
+        "unchanged":  31,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/unslop/SKILL.md",
+        "status":  "identical",
+        "upstreamLines":  62,
+        "portLines":  62,
+        "unchanged":  62,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/why/references/epistemics.md",
+        "status":  "identical",
+        "upstreamLines":  71,
+        "portLines":  71,
+        "unchanged":  71,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/why/references/investigator-prompt.md",
+        "status":  "identical",
+        "upstreamLines":  84,
+        "portLines":  84,
+        "unchanged":  84,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/why/references/source-playbook.md",
+        "status":  "identical",
+        "upstreamLines":  17,
+        "portLines":  17,
+        "unchanged":  17,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/why/references/sources/code-archaeology.md",
+        "status":  "identical",
+        "upstreamLines":  51,
+        "portLines":  51,
+        "unchanged":  51,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/why/references/sources/databricks.md",
+        "status":  "identical",
+        "upstreamLines":  70,
+        "portLines":  70,
+        "unchanged":  70,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/why/references/sources/datadog.md",
+        "status":  "identical",
+        "upstreamLines":  97,
+        "portLines":  97,
+        "unchanged":  97,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/why/references/sources/incident-postmortem.md",
+        "status":  "identical",
+        "upstreamLines":  5,
+        "portLines":  5,
+        "unchanged":  5,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/why/references/sources/linear.md",
+        "status":  "identical",
+        "upstreamLines":  48,
+        "portLines":  48,
+        "unchanged":  48,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/why/references/sources/notion.md",
+        "status":  "identical",
+        "upstreamLines":  55,
+        "portLines":  55,
+        "unchanged":  55,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/why/references/sources/sentry.md",
+        "status":  "identical",
+        "upstreamLines":  66,
+        "portLines":  66,
+        "unchanged":  66,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/why/references/sources/slack.md",
+        "status":  "identical",
+        "upstreamLines":  17,
+        "portLines":  17,
+        "unchanged":  17,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/why/references/synthesizer-prompt.md",
+        "status":  "identical",
+        "upstreamLines":  129,
+        "portLines":  129,
+        "unchanged":  129,
+        "removed":  0,
+        "added":  0
+    },
+    {
+        "file":  "skills/why/SKILL.md",
+        "status":  "changed",
+        "upstreamLines":  98,
+        "portLines":  98,
+        "unchanged":  94,
+        "removed":  4,
+        "added":  4
+    }
+]

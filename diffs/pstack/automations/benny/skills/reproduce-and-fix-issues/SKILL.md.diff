@@ -1,0 +1,46 @@
+--- upstream/automations/benny/skills/reproduce-and-fix-issues/SKILL.md
++++ jstack/automations/benny/skills/reproduce-and-fix-issues/SKILL.md
+@@ -19,5 +19,5 @@
+ - Delegated analysis workers are read-only and return findings or media notes.
+ - A fix-phase code worker may edit only when its environment provably excludes Slack credentials and every Slack write action. Otherwise the coordinator edits.
+-- Every child prompt must explicitly forbid `SendSlackMessage`, `PostToSlack`, `chat.postMessage`, and all other Slack writes.
++- Every child prompt must explicitly forbid the Claude Slack connector's send, post, reply, and edit tools, `chat.postMessage`, and all other Slack writes.
+ - Never give a child a Slack token, posting instructions, source coordinates for posting, or permission to report externally.
+ - If a child needs Slack write access to run, do not launch it.
+@@ -29,6 +29,6 @@
+ - Use `github.com` pull request links.
+ - Keep captures, recordings, logs, and tokens out of source control.
+-- Use pstack's `principle-guard-the-context-window` for delegated analysis.
+-- Apply pstack's `principle-sequence-verifiable-units`, `principle-fix-root-causes`, and `principle-prove-it-works` through repro, fix, and verification.
++- Use `pstack:principle-guard-the-context-window` for delegated analysis.
++- Apply `pstack:principle-sequence-verifiable-units`, `pstack:principle-fix-root-causes`, and `pstack:principle-prove-it-works` through repro, fix, and verification.
+ 
+ ## 1. Freeze source coordinates
+@@ -120,5 +120,5 @@
+ - Fix did not land
+ 
+-Prefer configured Cursor Slack actions. Use `BENNY_SLACK_BOT_TOKEN` only when the user configured it for a narrow missing capability such as editing this one status message. Never expose the token to a worker.
++Prefer the configured Claude Slack connector actions. Use `BENNY_SLACK_BOT_TOKEN` only when the user configured it for a narrow missing capability such as editing this one status message. Never expose the token to a worker.
+ 
+ If no operations channel is configured, keep detailed status in the automation run output. Do not substitute a source-channel root message.
+@@ -159,5 +159,5 @@
+ Inspect screenshots and video. Use read-only parallel workers for code history, test ideas, blast-radius mapping, and media review when useful. Each worker gets a narrow question and the Slack-write prohibition.
+ 
+-Use pstack's `how` skill to trace the action through the repository. Use `why` for regression history and defensive code. Form competing cause hypotheses and identify evidence that would separate them.
++Use the `pstack:how` skill to trace the action through the repository. Use `pstack:why` for regression history and defensive code. Form competing cause hypotheses and identify evidence that would separate them.
+ 
+ ## 7. Reproduce
+@@ -260,5 +260,5 @@
+ Fix the root cause with the smallest justified change.
+ 
+-- Invoke pstack's `tdd` skill when there is a cheap local test target, and write the failing test before the fix.
++- Invoke the `pstack:tdd` skill when there is a cheap local test target, and write the failing test before the fix.
+ - State why TDD was skipped when the path is expensive, unclear, or integration-heavy.
+ - Keep unrelated cleanup out.
+@@ -293,5 +293,5 @@
+ - Use the configured public URL form, normally `https://github.com/{owner}/{repo}/pull/{number}`.
+ - Include the repro steps, root cause, test result, before and after evidence, and blast-radius checks.
+-- Run the pull request text and all Slack updates through pstack's `unslop` skill.
++- Run the pull request text and all Slack updates through the `pstack:unslop` skill.
+ 
+ If pull request creation fails, do not claim success. Keep the commit or branch state in the run output and mark operations status `Fix did not land`.

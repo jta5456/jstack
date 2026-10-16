@@ -1,0 +1,77 @@
+--- upstream/skills/pr-review-canvas/SKILL.md
++++ jstack/skills/pr-review-canvas/SKILL.md
+@@ -16,7 +16,7 @@
+ 
+ ```bash
+-gh api repos/{owner}/{repo}/pulls/{number} --jq '{title, body, user: .user.login, state, additions, deletions, changed_files, base: .base.ref, head: .head.ref}'
+-gh api repos/{owner}/{repo}/pulls/{number}/files --paginate --jq '.[] | {filename, status, additions, deletions, patch}'
+-gh api repos/{owner}/{repo}/pulls/{number}/comments --jq '.[] | {user: .user.login, body, path, line}'
++gh api 'repos/{owner}/{repo}/pulls/{number}' --jq '{title, body, user: .user.login, state, additions, deletions, changed_files, base: .base.ref, head: .head.ref}'
++gh api 'repos/{owner}/{repo}/pulls/{number}/files' --paginate --jq '.[] | {filename, status, additions, deletions, patch}'
++gh api 'repos/{owner}/{repo}/pulls/{number}/comments' --jq '.[] | {user: .user.login, body, path, line}'
+ ```
+ 
+@@ -107,5 +107,5 @@
+ 1. During the fetch step, save patches to a JSON file using `jq` (which handles escaping correctly):
+ ```bash
+-gh api repos/{owner}/{repo}/pulls/{number}/files --paginate \
++gh api 'repos/{owner}/{repo}/pulls/{number}/files' --paginate \
+   --jq '[.[] | {key: (.filename | gsub("[^a-zA-Z0-9]"; "_")), value: (.patch // "")}] | from_entries' \
+   > /tmp/pr-patches-{number}.json
+@@ -112,15 +112,22 @@
+ ```
+ 
+-2. During assembly, use Python to safely inject the JSON into `template.html`:
++PowerShell:
++```powershell
++gh api 'repos/{owner}/{repo}/pulls/{number}/files' --paginate --jq '[.[] | {key: (.filename | gsub(\"[^a-zA-Z0-9]\"; \"_\")), value: (.patch // \"\")}] | from_entries' | Set-Content -Encoding utf8 "$env:TEMP\pr-patches-{number}.json"
++```
++
++2. During assembly, use Python (`py` on Windows) to safely inject the JSON into `template.html`:
+ ```bash
+-python3 <<'PY'
++python3 - /tmp <<'PY'
+ import json
++import sys
+ from pathlib import Path
+ 
+-patches = json.loads(Path('/tmp/pr-patches-{number}.json').read_text())
+-html = Path('/tmp/pr-review-{number}-body.html').read_text()
+-css = Path('styles.css').read_text()
+-js = Path('renderer.js').read_text()
+-tmpl = Path('template.html').read_text()
++tmp = Path(sys.argv[1])
++patches = json.loads((tmp / 'pr-patches-{number}.json').read_text(encoding='utf-8-sig'))
++html = (tmp / 'pr-review-{number}-body.html').read_text(encoding='utf-8-sig')
++css = Path('styles.css').read_text(encoding='utf-8')
++js = Path('renderer.js').read_text(encoding='utf-8')
++tmpl = Path('template.html').read_text(encoding='utf-8')
+ 
+ # Prevent literal </script> from terminating HTML script tags early.
+@@ -134,8 +141,10 @@
+ )
+ 
+-Path('/tmp/pr-review-{number}.html').write_text(out)
++(tmp / 'pr-review-{number}.html').write_text(out, encoding='utf-8')
+ PY
+ ```
+ 
++In PowerShell, pipe the same script in as a here-string: `@'` before it, `'@ | py - $env:TEMP` after it.
++
+ This guarantees valid JSON and script-safe HTML embedding. The agent writes body HTML to a temp file, then Python assembles everything safely.
+ 
+@@ -151,5 +160,5 @@
+ ### 4. Assemble and serve
+ 
+-1. Write your body HTML (everything that goes inside `<body>`) to `/tmp/pr-review-{number}-body.html`
++1. Write your body HTML (everything that goes inside `<body>`) to `/tmp/pr-review-{number}-body.html` (`$env:TEMP\pr-review-{number}-body.html` on Windows)
+ 2. Save patches to `/tmp/pr-patches-{number}.json` using the `jq` command from step 3 above
+ 3. Run the Python assembly script from step 3 above (reads styles.css, renderer.js, template.html from this skill directory, injects body + patches safely, writes final HTML)
+@@ -158,5 +167,6 @@
+    cd /tmp && python3 -m http.server 8432 --bind 127.0.0.1
+    ```
+-   Run this backgrounded, then navigate the in-app browser to `http://127.0.0.1:8432/pr-review-{number}.html`.
++   PowerShell: `py -m http.server 8432 --bind 127.0.0.1 --directory $env:TEMP`.
++   Run this backgrounded, then navigate the session's browser (built-in browser, Claude in Chrome, or Playwright MCP) to `http://127.0.0.1:8432/pr-review-{number}.html`.
+ 
+    **Why a fixed port and `cd /tmp`:** Background shells have no TTY, so Python buffers its startup message ("Serving HTTP on...") indefinitely — using port 0 means you can never read which port was chosen. And `--directory /tmp` works but `cd /tmp` is more robust across Python versions. If port 8432 is taken, try 8433, 8434, etc.

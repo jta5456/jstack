@@ -1,0 +1,30 @@
+--- upstream/skills/poteto-mode/scripts/orch/orch.test.ts
++++ jstack/skills/poteto-mode/scripts/orch/orch.test.ts
+@@ -421,5 +421,5 @@
+   it("replaces a stale lock whose holder pid is dead", async () => {
+     const { directory } = await initializedStore();
+-    const exited = Bun.spawn(["true"]);
++    const exited = Bun.spawn([process.execPath, "-e", ""]);
+     await exited.exited;
+     await writeFile(join(directory, ".orch.lock"), `${exited.pid}\n`);
+@@ -494,5 +494,5 @@
+ 
+   for (const forge of ["gh", "origin"] as const) {
+-    it(`resolves the ordered frontier from the ${forge} base chain and validates an optional pin`, async () => {
++    it.skipIf(process.platform === "win32")(`resolves the ordered frontier from the ${forge} base chain and validates an optional pin`, async () => {
+       const { directory, store } = await initializedStore();
+       const stack = await makeGitStack(directory);
+@@ -574,5 +574,5 @@
+     });
+ 
+-    it(`rejects unparseable ${forge} output loudly`, async () => {
++    it.skipIf(process.platform === "win32")(`rejects unparseable ${forge} output loudly`, async () => {
+       const { directory, store } = await initializedStore();
+       const stack = await makeGitStack(directory);
+@@ -593,5 +593,5 @@
+   }
+ 
+-  it("names the missing pull request when a chain branch has none", async () => {
++  it.skipIf(process.platform === "win32")("names the missing pull request when a chain branch has none", async () => {
+     const { directory, store } = await initializedStore();
+     const stack = await makeGitStack(directory);

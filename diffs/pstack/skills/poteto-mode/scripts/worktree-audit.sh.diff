@@ -1,0 +1,13 @@
+--- upstream/skills/poteto-mode/scripts/worktree-audit.sh
++++ jstack/skills/poteto-mode/scripts/worktree-audit.sh
+@@ -62,7 +62,7 @@
+ [ -s "$prs" ] || echo "[]" > "$prs"
+ 
+-# Transcripts dir: ~/.cursor/projects/<slugified-repo-path>/agent-transcripts.
+-slug=$(printf '%s' "$main_wt" | sed 's#^/##; s#/#-#g')
+-transcripts="$HOME/.cursor/projects/$slug/agent-transcripts"
++# Transcripts dir: ~/.claude/projects/<repo-path with every non-alphanumeric char as ->.
++slug=$(printf '%s' "$main_wt" | sed 's#[^A-Za-z0-9]#-#g')
++transcripts="${CLAUDE_CONFIG_DIR:-$HOME/.claude}/projects/$slug"
+ now=$(date +%s)
+ 

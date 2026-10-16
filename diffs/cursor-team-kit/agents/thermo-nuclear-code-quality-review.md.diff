@@ -1,0 +1,21 @@
+--- upstream/agents/thermo-nuclear-code-quality-review.md
++++ jstack/agents/thermo-nuclear-code-quality-review.md
+@@ -1,5 +1,5 @@
+ ---
+ name: thermo-nuclear-code-quality-review
+-description: Thermo-nuclear code quality audit (maintainability, structure, 1k-line rule, spaghetti, code-judo). Invoked via Task after a parent gathers diff and file contents. Loads the rubric from the `thermo-nuclear-code-quality-review` skill in the cursor-team-kit plugin.
++description: Thermo-nuclear code quality audit (maintainability, structure, 1k-line rule, spaghetti, code-judo). Invoked via Agent after a parent gathers diff and file contents. Loads the rubric from the `thermo-nuclear-code-quality-review` skill in the cursor-team-kit plugin.
+ ---
+ 
+@@ -6,5 +6,5 @@
+ # Thermo-Nuclear Code Quality Review
+ 
+-You are a **Task subagent**. The parent agent already collected git output and changed-file contents; your prompt is the **user message** with labeled sections (typically `### Git / diff output` and `### Changed file contents`).
++You are an **Agent subagent**. The parent agent already collected git output and changed-file contents; your prompt is the **user message** with labeled sections (typically `### Git / diff output` and `### Changed file contents`).
+ 
+ ## Rubric
+@@ -21,3 +21,3 @@
+ ## Parent orchestration
+ 
+-Typical flow: in **one** message, run two `Task` calls in parallel — `subagent_type: "shell"` and `subagent_type: "explore"` — to collect `git diff <base>...HEAD` output and full contents of changed files (default base `main`). Then invoke this agent with `subagent_type: "thermo-nuclear-code-quality-review"` and a user prompt containing `### Git / diff output` and `### Changed file contents`.
++Typical flow: in **one** message, run two `Agent` calls in parallel — `subagent_type: "general-purpose"` and `subagent_type: "Explore"` — to collect `git diff <base>...HEAD` output and full contents of changed files (default base `main`). Then invoke this agent with `subagent_type: "cursor-team-kit:thermo-nuclear-code-quality-review"` and a user prompt containing `### Git / diff output` and `### Changed file contents`.

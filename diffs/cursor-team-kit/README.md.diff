@@ -1,0 +1,23 @@
+--- upstream/README.md
++++ jstack/README.md
+@@ -6,5 +6,5 @@
+ 
+ ```bash
+-/add-plugin cursor-team-kit
++/plugin install cursor-team-kit@jstack
+ ```
+ 
+@@ -39,5 +39,5 @@
+ |:------|:------------|
+ | `ci-watcher` | Monitor GitHub Actions runs and return concise pass/fail summaries |
+-| `thermo-nuclear-code-quality-review` | Task subagent that runs the thermo-nuclear code quality rubric against a diff |
++| `thermo-nuclear-code-quality-review` | Agent subagent that runs the thermo-nuclear code quality rubric against a diff |
+ 
+ ### Rules
+@@ -48,4 +48,6 @@
+ | `no-inline-imports` | Keep imports at module top-level for readability and consistency |
+ 
++Claude Code plugins cannot ship rules: copy `rules/*.md` into `~/.claude/rules/` or `<repo>/.claude/rules/` to enable them.
++
+ ## License
+ 

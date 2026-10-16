@@ -1,0 +1,16 @@
+--- upstream/skills/make-pr-easy-to-review/SKILL.md
++++ jstack/skills/make-pr-easy-to-review/SKILL.md
+@@ -26,4 +26,6 @@
+ ```
+ 
++In PowerShell, the last line is `$ORIGINAL_TREE = git rev-parse 'origin/<headRefName>^{tree}'`.
++
+ Good commit groupings usually follow dependency order:
+ 
+@@ -38,5 +40,5 @@
+ ```bash
+ echo "Original tree: $ORIGINAL_TREE"
+-echo "Current tree:  $(git rev-parse HEAD^{tree})"
++echo "Current tree:  $(git rev-parse 'HEAD^{tree}')"
+ git diff origin/<headRefName> --stat
+ ```

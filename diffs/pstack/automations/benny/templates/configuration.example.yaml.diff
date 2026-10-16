@@ -1,0 +1,35 @@
+--- upstream/automations/benny/templates/configuration.example.yaml
++++ jstack/automations/benny/templates/configuration.example.yaml
+@@ -13,5 +13,5 @@
+   file_download_action: "configured-slack-file-download-action"
+   operations_edit_action: "configured-slack-edit-action"
+-  prefer_cursor_actions: true
++  prefer_claude_connector_actions: true
+   optional_bot_token_env: "BENNY_SLACK_BOT_TOKEN"
+   allow_source_root_posts: false
+@@ -40,5 +40,5 @@
+ 
+ routing:
+-  map_path: ".cursor/benny/routing.md"
++  map_path: ".claude/benny/routing.md"
+   owner_pings_default: false
+   allow_feature_owner_ping: false
+@@ -47,5 +47,5 @@
+ control:
+   skill_name: "control-target-app"
+-  feature_map_path: ".cursor/benny/feature-map.md"
++  feature_map_path: ".claude/benny/feature-map.md"
+   environment: "safe-test-environment-placeholder"
+   artifact_directory: "/tmp/benny-artifacts"
+@@ -79,6 +79,7 @@
+ 
+ models:
+-  triage: "choose-an-available-public-model-slug"
+-  reproduce: "choose-an-available-public-model-slug"
+-  code: "choose-an-available-public-model-slug"
+-  media_review: "choose-an-available-public-model-slug"
++  # <model>-<effort>: claude-opus-5-5-xhigh means model claude-opus-5-5 at effort xhigh
++  triage: "choose-an-available-claude-model-id-effort"
++  reproduce: "choose-an-available-claude-model-id-effort"
++  code: "choose-an-available-claude-model-id-effort"
++  media_review: "choose-an-available-claude-model-id-effort"
